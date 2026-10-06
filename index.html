@@ -271,9 +271,7 @@
 
   // One button per donation platform you've actually set up. Delete/add
   // freely — the row re-renders from this list, nothing else to touch.
-  var DONATE_LINKS = [
-    { label: "Donate with Liberapay", url: "https://liberapay.com/ramondw2000/" },
-  ];
+  var DONATE_LINKS = [];
 
   // Set this to null to hide the banner entirely (the default state).
   // Fill it in when you actually launch a fundraiser — nothing else on
@@ -312,7 +310,7 @@
   if (DONATE_LINKS.length) {
     renderDonateButtons(donateRow);
   } else {
-    donateRow.innerHTML = '<p style="color:var(--ink-faint);font-size:14.5px;">Donation links aren\'t set up yet — add them to <code>DONATE_LINKS</code> in this page.</p>';
+    donateRow.innerHTML = '<p style="color:var(--ink-faint);font-size:14.5px;">Donations aren\'t open yet. Check back soon.</p>';
   }
 
   // Donate-first download flow, itch.io-style: clicking a download opens a
